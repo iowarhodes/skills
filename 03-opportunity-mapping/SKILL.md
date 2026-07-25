@@ -81,4 +81,4 @@ Underneath the matrix, include a compact scorecard table (one row per opportunit
 
 ## When to move on
 
-Once the opportunity space feels reasonably stable (new interviews are landing on existing branches more often than creating new ones) and one opportunity has been selected, move to generating and mapping candidate solutions against it (skill 05) — then on to naming its riskiest assumptions (skill 06) before any test gets designed.
+Once the opportunity space feels reasonably stable (new interviews are landing on existing branches more often than creating new ones) and one opportunity has been selected, move to solution-mapping (skill 05) — it takes the opportunity all the way through candidate solutions, assumption mapping, and a first assumption test.

@@ -110,7 +110,7 @@ Once the outcome is set, this shouldn't dead-end:
 
 - **If this was the full brief:** tell the user the natural next step is the `continuous-interviewing` skill (step 2), which builds a weekly interview habit to start generating opportunities against this outcome. Offer to kick that off directly — don't just mention it in passing.
 - **If the brief has candidate solutions already sketched:** also mention `design-brief`, which takes the problem/success criteria/candidate solutions from this doc and turns them into a UI direction and experience decisions.
-- **If there's an unvalidated risky assumption** sitting in the Discovery hypotheses (including the outcome's own baked-in assumption): flag that too — it's worth testing via `assumption-testing` before design work locks in a direction.
+- **If there's an unvalidated risky assumption** sitting in the Discovery hypotheses (including the outcome's own baked-in assumption): flag that too — it's worth testing via `solution-mapping`'s assumption-testing phase before design work locks in a direction.
 
 ## Output format
 
@@ -147,7 +147,7 @@ If the user wanted the full brief, always save it as an actual markdown file (vi
 #### Delivery hypotheses (only if applicable)
 
 ## Next step
-[Pointer to continuous-interviewing to start building an opportunity space against this outcome, design-brief if candidate solutions are ready to take shape, and/or assumption-testing if unvalidated Discovery hypotheses remain]
+[Pointer to continuous-interviewing to start building an opportunity space against this outcome, design-brief if candidate solutions are ready to take shape, and/or solution-mapping's assumption-testing phase if unvalidated Discovery hypotheses remain]
 ```
 
 ## Common failure modes to flag for the user
