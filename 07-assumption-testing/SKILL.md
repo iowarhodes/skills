@@ -46,4 +46,4 @@ Always save the test plan as an actual markdown file (via create_file into the o
 
 ## Loop back
 
-This is the end of the first full pass through the discovery cycle for one opportunity. Continuous interviewing (skill 02) keeps running in parallel the whole time — use fresh interview signal to sanity-check whether the opportunity tree (skill 03) needs updating, then cycle back through prioritization for the next opportunity.
+This is the end of the first full pass through the discovery cycle for one opportunity. Continuous interviewing (skill 02) keeps running in parallel the whole time — use fresh interview signal to sanity-check whether the opportunity tree needs updating, then cycle back through opportunity-mapping's prioritization step (skill 03) for the next opportunity.

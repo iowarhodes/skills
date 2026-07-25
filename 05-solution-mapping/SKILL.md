@@ -1,6 +1,6 @@
 ---
 name: solution-mapping
-description: Generate and structure multiple candidate solutions for a single prioritized opportunity, following Teresa Torres' Continuous Discovery Habits. This is STEP 5 of a new discovery project — use it once one opportunity has been selected (see prioritize-opportunities skill) and before mapping assumptions or testing anything. Trigger whenever the user is brainstorming solutions for a specific customer need, wants to avoid jumping to their first idea, needs a divergent set of options before converging, or says things like "what could we build for this" or "help me brainstorm solutions."
+description: Generate and structure multiple candidate solutions for a single prioritized opportunity, following Teresa Torres' Continuous Discovery Habits. This is STEP 5 of a new discovery project — use it once one opportunity has been selected (see opportunity-mapping skill) and before mapping assumptions or testing anything. Trigger whenever the user is brainstorming solutions for a specific customer need, wants to avoid jumping to their first idea, needs a divergent set of options before converging, or says things like "what could we build for this" or "help me brainstorm solutions."
 ---
 
 # Solution Mapping
@@ -14,7 +14,7 @@ Torres' guidance: generate at least 5-10 solution ideas for one opportunity befo
 ## Process
 
 ### 1. Restate the opportunity
-Pull the selected opportunity statement from skill 04. Keep it visible throughout — every idea should trace back to this specific need.
+Pull the selected opportunity statement from skill 03's prioritization pick. Keep it visible throughout — every idea should trace back to this specific need.
 
 ### 2. Diverge before converging
 Generate a wide range of solution ideas, deliberately varying the *type* of solution, not just surface variations on one idea:
