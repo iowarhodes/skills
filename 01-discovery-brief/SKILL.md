@@ -1,19 +1,28 @@
 ---
 name: discovery-brief
-description: Build a deep problem-framing brief (RACI + Discover phase + Define phase + hypotheses) to kick off a new discovery project. Use this whenever the user is starting a new initiative and needs to nail down the problem before jumping to solutions — triggers on phrases like "kick off discovery," "write a discovery brief," "let's frame this problem," "who owns what on this project," "new project kickoff," or when the user has a fuzzy idea and needs to pressure-test whether it's a real, worth-solving problem. This runs alongside (not instead of) outcome-setting and opportunity-mapping work — use it when the user wants the full problem case documented, not just a north-star metric. Also trigger when the user asks for a RACI chart for a discovery/design/development effort.
+description: Build a deep problem-framing brief (RACI + Discover phase + Define phase, including a pressure-tested product outcome + hypotheses) to kick off a new discovery project, following Teresa Torres' Continuous Discovery Habits. This is STEP 1 of a new discovery project — use it before any interviewing, opportunity mapping, or solution work begins. Trigger whenever the user is starting a brand new discovery initiative or kicking off a new project and needs to nail down the problem and north-star outcome before jumping to solutions — phrases like "kicking off discovery," "write a discovery brief," "let's frame this problem," "what should our outcome be," "who owns what on this project," "new project kickoff," or when the user has a fuzzy idea and needs to pressure-test whether it's a real, worth-solving problem, or is confusing a business outcome (revenue, adoption) with a product outcome (a customer behavior change your product can influence). Also trigger when the user asks for a RACI chart for a discovery/design/development effort.
 ---
 
 # Discovery Brief
 
-A structured brief that forces problem-first thinking before anyone touches a solution. Two phases — **Discover** (is this real, and for whom?) and **Define** (what does winning look like, and what are we betting on?) — plus a RACI chart matrixed across Discovery, Design, and Development stages.
+A structured brief that forces problem-first thinking before anyone touches a solution. Three parts — **RACI** (who owns what), **Discover** (is this real, and for whom?), and **Define** (what does winning look like, and what are we betting on?) — that together anchor a new discovery project.
 
-This is a companion to the Torres-flow skills (`define-outcome`, `opportunity-mapping`, etc.), not a replacement. Use it when the user wants a durable, shareable problem-framing doc — the kind of thing that goes in front of a director or gets pasted into a project kickoff doc.
+This is a companion to the rest of the Torres-flow skills (`continuous-interviewing`, `opportunity-mapping`, etc.), not a replacement. Use it when the user wants a durable, shareable problem-framing doc — the kind of thing that goes in front of a director or gets pasted into a project kickoff doc — with a rigorously pressure-tested outcome statement at its core.
 
-## Process
+Solo-driver mode: often the person running this is doing it themselves, without a PM or eng partner in the room yet. Push them to pressure-test their own thinking rather than assuming a trio will catch gaps later — that pushback IS the value of this skill.
 
-Run this as an interview. Don't ask everything at once — work through it in the order below, and write up each section as you go so the user can course-correct early rather than at the end. Push back where an answer is vague, secretly a solution in disguise, or unsupported by evidence — that pushback IS the value of this skill.
+## Scoping the conversation
 
-### 0. RACI Chart
+Not every trigger wants the full document. Before running the whole process, gauge what the user actually needs:
+
+- **Just the outcome** ("what should our north-star be," "help me define an outcome" with no mention of a broader brief) → jump straight to the outcome-setting part of Define (below), but still ask the business-context question first — an outcome disconnected from a business goal won't get organizational buy-in.
+- **The full brief** ("kick off discovery," "frame this problem," "new project kickoff") → run RACI → Discover → Define in order, all the way through.
+
+Either way, run this as an interview. Don't ask everything at once — work through it in the order below, and write up each section as you go so the user can course-correct early rather than at the end. Push back where an answer is vague, secretly a solution in disguise, or unsupported by evidence.
+
+## 0. RACI Chart
+
+*(Skip if the user only wants the outcome.)*
 
 Ask who's involved and in what capacity across the three stages (Discovery, Design, Development). For each stage, identify:
 - **Responsible** — who does the work
@@ -23,7 +32,9 @@ Ask who's involved and in what capacity across the three stages (Discovery, Desi
 
 A person can hold different roles at different stages (e.g., Accountable in Discovery, Consulted in Development) — don't assume static roles. Build this as a table: rows = roles (R/A/C/I), columns = Discovery / Design / Development.
 
-### 1. Discover
+## 1. Discover
+
+*(Skip if the user only wants the outcome.)*
 
 Work through these in order. Each answer should sharpen the next — don't let the user skip the problem statement and jump to "what we should build."
 
@@ -51,29 +62,66 @@ Adjacent tools, competitor products, or how users solve it manually today. Look 
 **What's the business opportunity/risk?**
 Connect the user problem to a business outcome. Frame both directions: what's unlocked if solved, what continues/worsens if ignored (churn, missed revenue, brand damage, competitive gap).
 
-### 2. Define
+## 2. Define
 
-**What does success look like?**
-Get a behavior tied to a metric: "If we solve [problem], users will [behavior], resulting in [product metric]." Reject vague success criteria ("users will be happier") — push for something observable and measurable.
+### 2a. The outcome
 
-**How might we solve the problem?**
+This is the heart of Define — a compelling, measurable product outcome to anchor the project. Don't let this collapse into a vague "success looks like..." line; give it the full pressure-test.
+
+A product outcome is a measurable change in customer behavior that drives a business result — NOT the business result itself, and NOT an output (a feature, a launch, a deliverable).
+
+- Business outcome (too broad for a team to own directly): "Increase revenue 20%"
+- Product outcome (right altitude): "Increase the percentage of dealers who complete self-service quoting"
+- Output (not an outcome at all): "Ship the new quoting flow"
+
+A usable outcome is:
+1. **A behavior**, not a business metric — something a customer does, not something the company earns
+2. **Measurable** — you can point to a number that moves
+3. **Owned by the team** — the team's decisions can plausibly move this number
+4. **Not a proxy for a feature** — if the outcome describes a solution ("adopt the new dashboard"), it's actually an output in disguise
+
+Work through it in this order:
+1. **Start from the business context** captured in "What's the business opportunity/risk?" above (or ask for it directly, if you jumped straight here). An outcome disconnected from a business goal won't get organizational buy-in.
+2. **Draft 2-3 candidate outcomes.** For each, write it as "[Increase/decrease] the [percentage/number] of [customers] who [behavior]." Push for behaviors, not features.
+3. **Pressure-test each candidate** against the four criteria above. Explicitly call out if a candidate is secretly an output or a business metric.
+4. **Check "sphere of influence."** Ask: if this number doesn't move in 90 days, would it be because of something this team controls, or because of forces way outside their control (macroeconomics, sales team behavior, etc.)? If the latter, it's too broad.
+5. **Recommend one outcome**, state your reasoning, and flag any assumptions baked into it (e.g., "this assumes dealers who self-serve quotes are more likely to convert — worth validating that link exists before treating it as ground truth"). This becomes the brief's success criteria — the measurable signal everything else in Define ties back to.
+
+### 2b. Candidate solutions
+
+*(Skip if the user only wants the outcome.)*
+
 Ideas only, explicitly tied back to the specific problem they address. Frame these as hypothesis-generating options to explore, not commitments — if the user starts spec'ing a feature in detail here, gently redirect to solution-mapping/design-brief territory instead.
 
-**Hypotheses**
+### 2c. Hypotheses
+
+*(Skip if the user only wants the outcome.)*
+
 Write both types, and be clear about which one applies given where the project actually is:
 
 - **Discovery hypothesis** (use when there's a risky assumption to de-risk before building): "We believe [assumption is true]. We can validate this by [experiment/test]. We'll gain confidence if [signal/insight]."
 - **Delivery hypothesis** (use when the direction is validated and you're testing impact): "We believe [solution] will lead to [user behavior], which will drive [product/business outcome]. We'll know we're right when [measurable signal]."
 
-Most kickoffs need at least one Discovery hypothesis per risky assumption surfaced in Discover. Only write Delivery hypotheses if the user already has validation in hand — don't let a team write delivery-style confidence into a brief that hasn't earned it yet.
+Most kickoffs need at least one Discovery hypothesis per risky assumption surfaced in Discover (including the outcome assumption flagged in 2a). Only write Delivery hypotheses if the user already has validation in hand — don't let a team write delivery-style confidence into a brief that hasn't earned it yet.
 
-### 3. Handoff
+## 3. Handoff
 
-Once Define is filled in, this brief shouldn't dead-end. Tell the user the natural next step is the `design-brief` skill, which takes the problem/success criteria/candidate solutions from this doc and turns them into a UI direction and experience decisions. Offer to kick that off directly — don't just mention it in passing. If the user has an unvalidated risky assumption sitting in Discovery hypotheses, flag that too: it's worth testing (via `assumption-testing`) before design work locks in a direction.
+Once the outcome is set, this shouldn't dead-end:
+
+- **If this was the full brief:** tell the user the natural next step is the `continuous-interviewing` skill (step 2), which builds a weekly interview habit to start generating opportunities against this outcome. Offer to kick that off directly — don't just mention it in passing.
+- **If the brief has candidate solutions already sketched:** also mention `design-brief`, which takes the problem/success criteria/candidate solutions from this doc and turns them into a UI direction and experience decisions.
+- **If there's an unvalidated risky assumption** sitting in the Discovery hypotheses (including the outcome's own baked-in assumption): flag that too — it's worth testing via `assumption-testing` before design work locks in a direction.
 
 ## Output format
 
-Always save the brief as an actual markdown file (via create_file into the outputs directory, then present_files) — don't just print it inline in chat. Name the file `[project-name]-discovery-brief.md`. Produce a single markdown brief with this structure:
+If the user only wanted the outcome, a short outcome brief is enough — present it inline in chat:
+- **Business context** (1-2 sentences)
+- **Recommended outcome statement**
+- **Why this altitude is right** (ties to the 4 criteria)
+- **Open assumption(s)** to keep an eye on as discovery proceeds
+- **Next step pointer** (continuous-interviewing)
+
+If the user wanted the full brief, always save it as an actual markdown file (via create_file into the outputs directory, then present_files) — don't just print it inline in chat. Name the file `[project-name]-discovery-brief.md`. Produce a single markdown brief with this structure:
 
 ```
 # [Project Name] — Discovery Brief
@@ -91,14 +139,15 @@ Always save the brief as an actual markdown file (via create_file into the outpu
 ### Business opportunity/risk
 
 ## Define
-### Success criteria
+### Outcome
+[recommended outcome statement, why this altitude is right, open assumptions]
 ### Candidate solutions (directional, not commitments)
 ### Hypotheses
 #### Discovery hypotheses
 #### Delivery hypotheses (only if applicable)
 
 ## Next step
-[Pointer to design-brief skill to turn this into a UI direction, plus assumption-testing if unvalidated Discovery hypotheses remain]
+[Pointer to continuous-interviewing to start building an opportunity space against this outcome, design-brief if candidate solutions are ready to take shape, and/or assumption-testing if unvalidated Discovery hypotheses remain]
 ```
 
 ## Common failure modes to flag for the user
@@ -106,6 +155,9 @@ Always save the brief as an actual markdown file (via create_file into the outpu
 - Problem statement is actually a feature request in disguise ("users need a dashboard")
 - "Evidence" is really just an internal opinion or a single anecdote
 - Assumptions get written as if they're already validated facts
-- Success criteria are vague/unmeasurable ("better experience," "more engagement")
+- Outcome is really a project name or feature ("Launch PellaPro 2.0")
+- Outcome is a vanity metric (page views, logins) with no clear tie to value
+- Outcome is stated as a solution ("get dealers using the new IA")
+- Outcome is too big for one team to influence (company-wide NPS)
 - Delivery hypotheses show up before any discovery validation has happened
 - RACI has more than one Accountable per stage, or nobody Accountable at all

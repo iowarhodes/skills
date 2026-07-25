@@ -1,6 +1,6 @@
 ---
 name: continuous-interviewing
-description: Set up and run a weekly continuous customer interviewing habit, following Teresa Torres' Continuous Discovery Habits. This is STEP 2 of a new discovery project — use it right after an outcome has been defined (see define-outcome skill) and before any opportunity mapping happens, since opportunities get generated FROM these interviews. Trigger whenever the user wants to plan customer interviews, build an interview snapshot, write interview questions, set up a recurring research cadence, or says things like "I need to start talking to customers" or "how do I get a weekly interview habit going."
+description: Set up and run a weekly continuous customer interviewing habit, following Teresa Torres' Continuous Discovery Habits. This is STEP 2 of a new discovery project — use it right after an outcome has been defined (see discovery-brief skill) and before any opportunity mapping happens, since opportunities get generated FROM these interviews. Trigger whenever the user wants to plan customer interviews, build an interview snapshot, write interview questions, set up a recurring research cadence, or says things like "I need to start talking to customers" or "how do I get a weekly interview habit going."
 ---
 
 # Continuous Interviewing
