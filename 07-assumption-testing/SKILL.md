@@ -37,6 +37,8 @@ Suggest the smallest viable version: a handful of participants (5 is often plent
 
 ## Output format
 
+Always save the test plan as an actual markdown file (via create_file into the outputs directory, then present_files) — don't just print it inline in chat. Name the file `[project-name]-assumption-test.md`. Structure it as:
+
 - **Assumption restated as a falsifiable claim**
 - **Test format chosen** and why it matches the assumption type
 - **Success/failure criteria**, defined before running it
