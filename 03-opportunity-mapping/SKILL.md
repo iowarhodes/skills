@@ -33,7 +33,7 @@ Avoid solution-shaped names ("Need an autosave feature") — reframe as the unde
 Some opportunities are actually a parent need with smaller needs nested underneath (e.g., "trust that data saved" might break into "wants visual confirmation" and "wants a way to recover from an accidental navigation-away"). Nest these as child opportunities under the parent — this becomes the tree structure. Each parent should have multiple children, and each child should be unique enough to stand on its own. If multiple children in the same parent are really the same need, merge them. If a child is really a solution in disguise, flag it and move it to the solution layer of the tree instead.
 
 **4. Build the opportunity tree.**
-Structure as a tree with the outcome (from skill 01) at the top, key moments in time in the middle starting with "when," and the opportunity clusters as the layer directly beneath it starting with "I need" or "I want." Each opportunity should plausibly, if addressed, move the outcome. If an opportunity doesn't connect to the outcome, flag it — it may belong to a different outcome or project.
+Structure as a tree with the outcome (from skill 01) at the top, then the "when" layer, then the opportunity clusters directly beneath it starting with "I need" or "I want." Pull the "when" layer straight from continuous-interviewing's cross-interview timeline (skill 02) rather than re-deriving it — carry over each moment's evidence count and outlier flag as-is. Attach each opportunity cluster under the specific moment(s) it arises from; an opportunity with no moment to attach to is a signal it may not be well-grounded in the interviews yet. Each opportunity should plausibly, if addressed, move the outcome. If an opportunity doesn't connect to the outcome, flag it — it may belong to a different outcome or project.
 
 **5. Note evidence strength.**
 For each opportunity, tag how many separate interviews surfaced it. Distinguish "recurring pattern across N interviews" from "single mention, worth watching."
@@ -62,7 +62,7 @@ Note the other opportunities as parked, not dead — they stay on the tree for a
 Always save the output as a single self-contained HTML file (via create_file into the outputs directory, then present_files) — don't just print the tree and scores inline in chat. Name the file `[project-name]-opportunity-map.html`. Inline all CSS and any diagram markup (SVG) directly in the file — no external stylesheets, fonts, or CDN scripts — and make sure it's readable in both light and dark viewing (avoid pure black/white blocks that only work in one mode). The page has two parts:
 
 **1. Opportunity tree (visual map)**
-Render the tree as SVG or styled nested HTML boxes: outcome at the top, "when" moments in the middle layer, opportunities and sub-opportunities nested beneath. Each opportunity node should show:
+Render the tree as SVG or styled nested HTML boxes: outcome at the top, "when" moments in the middle layer, opportunities and sub-opportunities nested beneath. Carry the solid-vs-outlier marker styling for "when" nodes over from the continuous-interviewing timeline (skill 02), so overlapping and outlier moments stay visually distinct here too. Each opportunity node should show:
 - The opportunity statement
 - Evidence strength (e.g., a small badge: "5 interviews" vs "1 mention")
 - A visual flag on any node noted as a solution-in-disguise or not clearly laddering to the outcome

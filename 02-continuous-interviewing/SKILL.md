@@ -1,6 +1,6 @@
 ---
 name: continuous-interviewing
-description: Set up and run a weekly continuous customer interviewing habit, following Teresa Torres' Continuous Discovery Habits. This is STEP 2 of a new discovery project — use it right after an outcome has been defined (see discovery-brief skill) and before any opportunity mapping happens, since opportunities get generated FROM these interviews. Trigger whenever the user wants to plan customer interviews, build an interview snapshot, write interview questions, set up a recurring research cadence, or says things like "I need to start talking to customers" or "how do I get a weekly interview habit going."
+description: Set up and run a weekly continuous customer interviewing habit, following Teresa Torres' Continuous Discovery Habits. This is STEP 2 of a new discovery project — use it right after an outcome has been defined (see discovery-brief skill) and before any opportunity mapping happens, since opportunities get generated FROM these interviews and their aggregated timeline of key moments. Trigger whenever the user wants to plan customer interviews, build an interview snapshot, write interview questions, set up a recurring research cadence, build a timeline of what's happening across interviews, or says things like "I need to start talking to customers" or "how do I get a weekly interview habit going."
 ---
 
 # Continuous Interviewing
@@ -34,9 +34,17 @@ After the interview, work from the recording or transcript rather than relying o
 Prioritize getting the quotes and insights right over speed — but don't let transcripts pile up unread; review each one within a day so the context is still fresh enough to catch nuance the transcript alone might miss.
 
 ### 5. Key moments in time
-For each interview, also produce a chronological list of the most significant events from the conversation. This helps you see the story arc of the interview and spot patterns across multiple interviews.
+For each interview, also produce a chronological list of the most significant events from the conversation. This helps you see the story arc of the interview and is the raw material step 6 rolls up across interviews.
 
-### 6. Feed snapshots forward
+### 6. Aggregate the cross-interview timeline
+After each new interview, fold its key moments (step 5) into one running timeline across all interviews so far:
+- **Order by journey, not interview date.** Place moments by where they fall in the customer's process (e.g., "starts a quote" → "hits a wall mid-quote" → "saves or abandons"), so moments from different interviews that describe the same point in the journey line up next to each other.
+- **Cluster overlapping moments.** When the same or near-same moment shows up across multiple interviews (e.g., "wasn't sure the quote saved" surfaces in 6 of 8 interviews), merge them into one timeline entry tagged with how many interviews it came from.
+- **Flag outliers.** A moment that appears in only one or two interviews and doesn't cluster with where the rest of the group converges is an outlier — don't fold it in or discard it. Mark it clearly as low-evidence/an edge case worth watching, distinct from the moments the group is converging on.
+
+This aggregated, evidence-tagged timeline — not any single interview's list — is what becomes the "when" layer of the opportunity tree in opportunity mapping (skill 03). Each overlapping moment is a candidate node opportunities can cluster beneath; outliers may still earn a node, but carried forward with a visibly weaker evidence tag.
+
+### 7. Feed snapshots forward
 Each snapshot's tagged moments are the raw material for the opportunity space in the next step. Keep a running log (a google drive spreadsheet) of snapshots so they can be pulled into opportunity mapping.
 
 ## Output format
@@ -47,6 +55,12 @@ Per interview, produce:
 - **Feed snapshots forward**: a running log of all interview snapshots in a google drive spreadsheet
 - **Running tally**: after each interview, note whether new insights are still showing up or whether things are converging (a signal for when the opportunity space is getting stable enough to move to mapping)
 
+Across interviews, maintain and refresh one **cross-interview timeline** as a single self-contained HTML file (via create_file into the outputs directory, then present_files) — don't just re-print it in chat each time. Name it `[project-name]-interview-timeline.html`. Inline all CSS and diagram markup (SVG) directly in the file — no external stylesheets, fonts, or CDN scripts — and keep it readable in both light and dark viewing. Render it as a single timeline ordered by the customer's journey:
+- Each entry shows the moment description, an evidence badge ("N interviews"), and which interviews it came from
+- Overlapping moments (multiple interviews) shown as solid, filled markers along the main line
+- Outlier moments (single or rare mention) shown visually distinct — e.g., hollow/dashed marker, off the main line — clearly flagged rather than blended in
+- A short legend explaining the solid-vs-outlier marker distinction
+
 ## When to move on
 
-Once a handful of interviews (roughly 5-8) are complete, overlapping tags rather than all-new ground, that's the cue to move to opportunity mapping (skill 03). Continuous interviewing itself never fully "ends" — it keeps running in parallel with every later step.
+Once a handful of interviews (roughly 5-8) are complete, overlapping moments rather than all-new ground, that's the cue to move to opportunity mapping (skill 03) — hand off the cross-interview timeline as its "when" layer. Continuous interviewing itself never fully "ends" — it keeps running in parallel with every later step, and the timeline keeps refreshing as new interviews land.
