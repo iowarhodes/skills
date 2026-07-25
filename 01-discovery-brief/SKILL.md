@@ -73,7 +73,7 @@ Once Define is filled in, this brief shouldn't dead-end. Tell the user the natur
 
 ## Output format
 
-Produce a single markdown brief with this structure:
+Always save the brief as an actual markdown file (via create_file into the outputs directory, then present_files) — don't just print it inline in chat. Name the file `[project-name]-discovery-brief.md`. Produce a single markdown brief with this structure:
 
 ```
 # [Project Name] — Discovery Brief
