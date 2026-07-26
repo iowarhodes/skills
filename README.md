@@ -34,14 +34,17 @@ doc nobody re-reads.
 
 ## The discovery flow
 
-Four of the five skills form one continuous cycle, run in order the first time through a
+Six of the seven skills form one continuous cycle, run in order the first time through a
 project and then looped for each new opportunity:
 
 ```mermaid
 flowchart LR
-    A["01 · discovery-brief\n(frame the problem)"] --> B["02 · continuous-interviewing\n(weekly customer interviews)"]
+    Z["00 · jtbd-discovery\n(raw job → job statement)"] --> A["01 · discovery-brief\n(frame the problem)"]
+    A --> B["02 · continuous-interviewing\n(weekly customer interviews)"]
     B --> C["03 · opportunity-mapping\n(cluster + prioritize)"]
     C --> D["04 · solution-mapping\n(diverge, map assumptions, test)"]
+    D --> E["05 · roadmap\n(OKRs + horizon placement)"]
+    E -. de-risk a speculative bet .-> D
     D -. next opportunity .-> C
     B -. keeps running in parallel throughout .-> C
 ```
@@ -54,10 +57,12 @@ the discovery flow above.
 
 | # | Skill | What it does | Use it when |
 |---|-------|---------------|-------------|
+| 00 | [`jtbd-discovery`](00-jtbd-discovery/SKILL.md) | Turns a fuzzy "customers want X" into a Christensen-form job statement, top desired outcomes, and today's competing solutions/workarounds. | A raw ask lands before any problem-framing has happened — especially when it arrives as a solution ("they need a dashboard") rather than a job. |
 | 01 | [`discovery-brief`](01-discovery-brief/SKILL.md) | Builds a problem-framing brief: a RACI chart, a pressure-tested problem statement, and a product outcome (not a business metric, not a feature) with supporting hypotheses. | Kicking off a new discovery project, before any interviews or opportunity work. |
 | 02 | [`continuous-interviewing`](02-continuous-interviewing/SKILL.md) | Sets up a weekly customer-interview habit: recruiting loop, story-based interview guide, per-interview snapshots (verbatim quotes + tagged insights), and a running cross-interview timeline. | Right after an outcome is defined. Runs continuously — it never fully "ends," even while later steps are underway. |
 | 03 | [`opportunity-mapping`](03-opportunity-mapping/SKILL.md) | Turns interview snapshots into an opportunity tree (needs/pains/desires clustered under the outcome), then scores and prioritizes which opportunity to pursue first. | Once a handful of interviews (~5-8) are in and it's time to decide what to work on. |
 | 04 | [`solution-mapping`](04-solution-mapping/SKILL.md) | Diverges on 5-8+ solution ideas for the chosen opportunity, maps the riskiest assumptions across desirability/viability/feasibility/usability, and designs the smallest test for the riskiest one. | Once one opportunity is selected and it's time to explore — and de-risk — solutions. |
+| 05 | [`roadmap`](05-roadmap/SKILL.md) | Builds an OKR-tied roadmap — Objectives, Key Results, and initiatives placed on a near-term/long-term horizon — auto-populated from discovery-brief/opportunity-mapping/solution-mapping output when available, with validated-vs-speculative confidence tagging. | Closing out a first pass through the cycle and turning discovery output into a stakeholder-facing roadmap. Distinct from the installed `product-management:roadmap-update` plugin skill — see its SKILL.md for the trigger-phrasing split. |
 | — | [`ooux-designer`](ooux-designer/SKILL.md) | Applies Object-Oriented UX via the ORCA framework (Objects, Relationships, Calls-to-action, Attributes) to model a feature, data structure, or UI hierarchy. | Designing or structuring any feature, schema, or component set — independent of the flow above. |
 
 Every skill defaults to **solo-driver mode**: guidance assumes a single designer is running
@@ -68,6 +73,8 @@ calls (feasibility, viability) deserve a second opinion before being treated as 
 
 ```
 skills/
+├── 00-jtbd-discovery/
+│   └── SKILL.md
 ├── 01-discovery-brief/
 │   └── SKILL.md
 ├── 02-continuous-interviewing/
@@ -75,6 +82,8 @@ skills/
 ├── 03-opportunity-mapping/
 │   └── SKILL.md
 ├── 04-solution-mapping/
+│   └── SKILL.md
+├── 05-roadmap/
 │   └── SKILL.md
 └── ooux-designer/
     └── SKILL.md
