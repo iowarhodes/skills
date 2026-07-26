@@ -1,6 +1,6 @@
 ---
 name: jtbd-discovery
-description: Turn a fuzzy "customers want X" into a real Jobs-to-be-Done statement before any problem-framing work starts. This is STEP 0 of a new discovery project — use it before discovery-brief, whenever a request arrives as a feature/solution ("they need a dashboard") or a vague want rather than a job the customer is trying to get done. Produces a four-part job statement (when/but/help me/so I), top desired outcomes, and today's competing solutions/workarounds (what's being hired and fired). Trigger whenever the user hands you a feature request that's really a job in disguise, says things like "customers want X," "users are asking for Y," "what job is this really serving," wants to write a job statement, or needs to pressure-test a raw ask before it becomes a discovery brief.
+description: Turn a fuzzy "customers want X" into a real Jobs-to-be-Done statement before any problem-framing work starts. This is STEP 0 of a new discovery project — use it before discovery-brief, whenever a request arrives as a feature/solution ("they need a dashboard") or a vague want rather than a job the customer is trying to get done. Produces a four-part job statement (when/but/help me/so I), top desired outcomes, today's competing solutions/workarounds (what's being hired and fired), and a job map of stage-by-stage job statements across the eight universal job stages (define, locate, prepare, confirm, execute, monitor, modify, conclude). Trigger whenever the user hands you a feature request that's really a job in disguise, says things like "customers want X," "users are asking for Y," "what job is this really serving," wants to write a job statement, or needs to pressure-test a raw ask before it becomes a discovery brief.
 ---
 
 # JTBD Discovery
@@ -31,6 +31,21 @@ Use this four-part form — it makes the barrier explicit instead of leaving it 
 
 Each one names a *real* barrier (not "no solution exists") and ties the outcome to an emotional payoff, not just a functional one. Use these as the bar for "done" when you draft the job statement in step 5 below — if the barrier clause could be deleted without losing meaning, push the user for a sharper one.
 
+## Universal Job Map (Eight Stages)
+
+The core job statement captures the job as a whole. The Universal Job Map (see [myles-innovation.com/blog/jtbd-canvas-guide](https://myles-innovation.com/blog/jtbd-canvas-guide/)) breaks that job into the process the customer actually runs to get it done — useful because friction and unmet outcomes usually live inside one specific stage, not the job in the abstract.
+
+1. **Define** — Determine what needs to be done and plan the approach.
+2. **Locate** — Find and gather inputs, materials, and information.
+3. **Prepare** — Set up the environment and necessary resources.
+4. **Confirm** — Verify readiness before starting execution.
+5. **Execute** — Perform the core task.
+6. **Monitor** — Track ongoing progress and performance.
+7. **Modify** — Make adjustments or handle changes as needed.
+8. **Conclude** — Finish, clean up, and document the process.
+
+Every job map stage gets written in the same four-part shape as the core statement (when/but/help me/so I) — just scoped tightly to that slice of the process instead of the whole job. A stage statement that reads as a bare task description ("order the coffee") hasn't been done yet; it needs its own situation, barrier, and outcome, even in miniature.
+
 ## Process
 
 Run this as a conversation, not a form — ask one thing at a time and write up each piece as you go so the user can correct course early. Four things must get asked no matter what: **who** this is for, **why** they want it (motivations), **what's blocking them** (barriers), and **what they're hiring or firing today**. The steps below fold those into the natural flow rather than treating them as a separate checklist.
@@ -48,6 +63,8 @@ Run this as a conversation, not a form — ask one thing at a time and write up 
 **6. What they're hiring / firing.** What are they using or doing today instead? Push past "nothing" — jobs are almost always being done by something today, even if it's a workaround, a spreadsheet, a manual process, or a competitor's half-fit tool ("hiring"). Also ask what they've tried and abandoned, and why ("firing") — that's often more diagnostic than what's currently working, since it tells you what not to build.
 
 **7. Pull of the status quo** *(optional — only if it surfaces naturally, don't force it)*. What's dragging them back to what they do today even if the new thing sounds better? A one-liner is enough — you don't need the full push/pull/anxiety/habit Switch model, just whatever surfaces in conversation.
+
+**8. Job map pass.** Once the core statement holds up, draft a job statement for each of the eight Universal Job Map stages yourself, using the audience, situation, barriers, and outcomes already gathered — don't restart the four-question interview eight times, that breaks the "lightweight by design" principle. Present all eight in one batch and let the user correct or fill gaps, the same way you'd sanity-check a first draft. Not every stage will be rich for every job — a quick, honest one-liner beats a padded one; if a stage genuinely doesn't apply (e.g. "Confirm" is trivial for an impulse buy), say so instead of inventing a barrier.
 
 ## Output format
 
@@ -73,6 +90,18 @@ When [situation], but [barrier], help me [motivation], so I [expected outcome].
 ## What's Pulling Them Back to the Status Quo
 [optional — only if it surfaced naturally]
 
+## Job Map
+Stage-by-stage job statements, same when/but/help me/so I shape as above, scoped to that slice of the process.
+
+- **Define:** When..., but..., help me..., so I...
+- **Locate:** When..., but..., help me..., so I...
+- **Prepare:** When..., but..., help me..., so I...
+- **Confirm:** When..., but..., help me..., so I...
+- **Execute:** When..., but..., help me..., so I...
+- **Monitor:** When..., but..., help me..., so I...
+- **Modify:** When..., but..., help me..., so I...
+- **Conclude:** When..., but..., help me..., so I...
+
 ## Next Step
 Feeds discovery-brief's problem statement — the job statement above becomes the seed for "what is the problem?"
 ```
@@ -85,6 +114,9 @@ Feeds discovery-brief's problem statement — the job statement above becomes th
 - The situation described is really a persona/demographic, not a triggering context
 - The audience is left vague ("small business owners") instead of a picturable, specific person
 - The barrier clause is missing or generic ("no good solution exists") instead of naming the real thing in their way
+- A job map stage is written as a bare task ("execute: order the coffee") instead of a real when/but/help me/so I statement
+- Every job map stage gets forced through a full interview round instead of being drafted from what's already known and handed back for a quick correction
+- A stage that genuinely doesn't apply gets padded with an invented barrier instead of being flagged as trivial/not applicable
 
 ## Handoff
 
